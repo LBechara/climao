@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+    }
+    .input {
+        
+    }
+}
