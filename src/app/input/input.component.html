@@ -1,6 +1,9 @@
 <div class="container">
     <label for="cidade" class="title">Cidade</label>
     <form [formGroup]="textForm" (ngSubmit)="onSubmit()">
-        <input id="cidade" class="input" type="text" >
+        <input id="cidade" class="input" type="text" formControlName="cidade">
     </form>
 </div>
+<div id="nomeCidade">{{nomeCidade}}</div>
+<p>Temperatura mínima: {{temperaturaMinima}}</p>
+<p>Temperatura máxima: {{temperaturaMaxima}}</p>
