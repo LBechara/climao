@@ -23,12 +23,16 @@ export class InputComponent implements OnInit {
   constructor(private formBuilder: FormBuilder, private http: HttpClient) { }
 
   ngOnInit(): void {
+    criaFormulario()
+  }
+
+  criaFormulario() {
     this.textForm = this.formBuilder.group({
       cidade: ['', Validators.required]
     })
     console.log(this.textForm)
   }
-
+  
   onSubmit() {
     console.log(this.textForm.value.cidade)
     this.mostraRetorno(this.textForm.value.cidade)
